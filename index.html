@@ -79,14 +79,28 @@
   <div class="container">
     <h2>Membership Application</h2>
 
-    <form class="application-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdC9u7AESEIYHUkLA_0PVAsjttydV_X5iVwCeNm4Fk5hml-1Q/viewform?usp=sharing&ouid=105298531917031962443">
-      <input type="text" placeholder="Full Name" required />
-      <input type="email" placeholder="Email Address" required />
-      <input type="number" placeholder="Age" required />
-      <input type="text" placeholder="Profession" />
-      <textarea placeholder="Tell us a little about yourself and what you're looking for"></textarea>
-      <button type="submit" class="btn primary">Submit Application</button>
-    </form>
+    <p>
+      Complete our membership application to join the Muslim 40+ Houston community.
+    </p>
+
+    <button
+      class="btn primary"
+      onclick="document.getElementById('googleFormFrame').style.display='block'; this.style.display='none';">
+      Open Application
+    </button>
+    <div id="googleFormFrame" style="display:none; margin-top:40px;">
+
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdC9u7AESEIYHUkLA_0PVAsjttydV_X5iVwCeNm4Fk5hm1-1Q/viewform?embedded=true"
+        width="100%"
+        height="1200"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">
+        Loading…
+      </iframe>
+
+    </div>
   </div>
 </section>
 
